@@ -331,8 +331,8 @@ Export to other packages
   package My::User;
   use My::Constants qw(:my_constants);
   FOO == 0 && BAR == 1 && BAZ == 2 &&
-        my_constants_to_str(FOO eq 'FOO') && my_constants_to_str(BAR eq 'BAR') &&
-        my_constants_to_str(BAZ eq 'BAZ');
+        my_constants_to_str(FOO) eq 'FOO' && my_constants_to_str(BAR) eq 'BAR' &&
+        my_constants_to_str(BAZ) eq 'BAZ';
 
 =head2 DESCRIPTION
 
